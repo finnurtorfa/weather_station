@@ -56,4 +56,34 @@ F 3 "" H 6000 3925 60  0000 C CNN
 	1    5500 3625
 	1    0    0    -1  
 $EndComp
+$Comp
+L BATTERY BT?
+U 1 1 551566A1
+P 950 1050
+F 0 "BT?" H 950 1250 50  0000 C CNN
+F 1 "LiPo Battery" H 950 860 25  0000 C CNN
+F 2 "" H 950 1050 60  0000 C CNN
+F 3 "" H 950 1050 60  0000 C CNN
+	1    950  1050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55156853
+P 950 1500
+F 0 "#PWR?" H 950 1250 60  0001 C CNN
+F 1 "GND" H 950 1350 60  0000 C CNN
+F 2 "" H 950 1500 60  0000 C CNN
+F 3 "" H 950 1500 60  0000 C CNN
+	1    950  1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  575  0    60   Input ~ 0
+BAT+
+Wire Wire Line
+	950  750  950  575 
+Wire Wire Line
+	950  575  850  575 
+Wire Wire Line
+	950  1350 950  1500
 $EndSCHEMATC
