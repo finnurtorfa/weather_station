@@ -45,4 +45,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L nRF51x22 U?
+U 1 1 551538E5
+P 5500 3625
+F 0 "U?" H 5500 3525 60  0000 C CNN
+F 1 "nRF51x22" H 5500 3725 60  0000 C CNN
+F 2 "" H 6000 3925 60  0000 C CNN
+F 3 "" H 6000 3925 60  0000 C CNN
+	1    5500 3625
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
