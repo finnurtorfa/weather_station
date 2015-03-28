@@ -48,13 +48,13 @@ $EndDescr
 $Comp
 L nRF51x22 U?
 U 1 1 551538E5
-P 6350 3925
-F 0 "U?" H 6350 3825 60  0000 C CNN
-F 1 "nRF51x22" H 6350 4025 60  0000 C CNN
-F 2 "" H 6850 4225 60  0000 C CNN
-F 3 "" H 6850 4225 60  0000 C CNN
-	1    6350 3925
-	1    0    0    -1  
+P 6500 3925
+F 0 "U?" V 6650 3925 60  0000 C CNN
+F 1 "nRF51x22" V 6325 3925 60  0000 C CNN
+F 2 "" H 7000 4225 60  0000 C CNN
+F 3 "" H 7000 4225 60  0000 C CNN
+	1    6500 3925
+	0    -1   1    0   
 $EndComp
 $Comp
 L BATTERY BT?
@@ -689,34 +689,114 @@ Text Notes 10025 1475 0    30   ~ 0
 Decoupling DEC1
 Text Notes 10825 1475 0    30   ~ 0
 Decoupling DEC2
-Text GLabel 6150 3175 1    30   Input ~ 0
+Text GLabel 5750 3725 0    30   Input ~ 0
 AVDD
 Wire Wire Line
-	6150 3275 6150 3175
+	5850 3725 5750 3725
 Wire Wire Line
-	6100 3275 6100 3225
+	5850 3675 5800 3675
 Wire Wire Line
-	6100 3225 6150 3225
-Connection ~ 6150 3225
-Text GLabel 6000 3175 1    30   Input ~ 0
+	5800 3675 5800 3725
+Connection ~ 5800 3725
+Text GLabel 5750 3575 0    30   Input ~ 0
 VDD
 Wire Wire Line
-	6000 3175 6000 3275
+	5750 3575 5850 3575
 Wire Wire Line
-	5950 3275 5950 3225
+	5850 3525 5800 3525
 Wire Wire Line
-	5950 3225 6000 3225
-Connection ~ 6000 3225
-Text GLabel 6300 3175 1    30   Input ~ 0
+	5800 3525 5800 3575
+Connection ~ 5800 3575
+Text GLabel 5750 3875 0    30   Input ~ 0
 DCC
 Wire Wire Line
-	6300 3175 6300 3275
-Text GLabel 7100 3575 2    30   Input ~ 0
+	5750 3875 5850 3875
+Text GLabel 6150 4675 3    30   Input ~ 0
 DEC1
-Text GLabel 7100 3625 2    30   Input ~ 0
+Text GLabel 6200 4675 3    30   Input ~ 0
 DEC2
 Wire Wire Line
-	7100 3575 7000 3575
+	6150 4675 6150 4575
 Wire Wire Line
-	7100 3625 7000 3625
+	6200 4675 6200 4575
+Connection ~ 9200 2750
+Connection ~ 9200 3350
+Text GLabel 9100 3350 0    30   Input ~ 0
+XC2
+Text GLabel 9100 2750 0    30   Input ~ 0
+XC1
+Connection ~ 9800 3050
+Wire Wire Line
+	9300 3050 9800 3050
+Wire Wire Line
+	9200 3350 9200 3250
+Wire Wire Line
+	9100 3350 9300 3350
+Connection ~ 9800 3350
+Wire Wire Line
+	9700 3350 9800 3350
+Wire Wire Line
+	9800 2750 9800 3450
+Wire Wire Line
+	9700 2750 9800 2750
+Wire Wire Line
+	9100 2750 9300 2750
+Wire Wire Line
+	9200 2850 9200 2750
+$Comp
+L GND #PWR?
+U 1 1 5517568D
+P 9800 3450
+F 0 "#PWR?" H 9800 3200 60  0001 C CNN
+F 1 "GND" H 9800 3300 60  0000 C CNN
+F 2 "" H 9800 3450 60  0000 C CNN
+F 3 "" H 9800 3450 60  0000 C CNN
+	1    9800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL_SMD X?
+U 1 1 55174EB7
+P 9200 3050
+F 0 "X?" V 9250 3225 50  0000 C CNN
+F 1 "16MHz" V 9125 3125 50  0000 L CNN
+F 2 "" H 9200 3050 60  0000 C CNN
+F 3 "" H 9200 3050 60  0000 C CNN
+	1    9200 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 55174E49
+P 9500 3350
+F 0 "C?" V 9550 3450 50  0000 L CNN
+F 1 "12pF" V 9550 3100 50  0000 L CNN
+F 2 "" H 9538 3200 30  0000 C CNN
+F 3 "" H 9500 3350 60  0000 C CNN
+	1    9500 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 55174DB1
+P 9500 2750
+F 0 "C?" V 9550 2850 50  0000 L CNN
+F 1 "12pF" V 9550 2475 50  0000 L CNN
+F 2 "" H 9538 2600 30  0000 C CNN
+F 3 "" H 9500 2750 60  0000 C CNN
+	1    9500 2750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6600 4675 3    30   Input ~ 0
+XC1
+Text GLabel 6650 4675 3    30   Input ~ 0
+XC2
+Wire Wire Line
+	6600 4675 6600 4575
+Wire Wire Line
+	6650 4675 6650 4575
+Text Notes 9225 2575 0    30   ~ 0
+16 MHz Crystal
+Wire Notes Line
+	8800 325  8800 6600
 $EndSCHEMATC
