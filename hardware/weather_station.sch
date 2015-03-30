@@ -1103,4 +1103,110 @@ Wire Wire Line
 	6800 3225 6800 3125
 NoConn ~ 1675 5375
 NoConn ~ 1675 5425
+Text Notes 1050 5100 0    30   ~ 0
+Humidity and temperature sensor
+Text Notes 1050 4150 0    30   ~ 0
+Temperature sensor
+Text GLabel 925  6025 0    20   Input ~ 0
+SCL
+Text GLabel 1775 5750 2    20   Input ~ 0
+V3.3
+$Comp
+L BMP280 U?
+U 1 1 5519B048
+P 1300 6000
+F 0 "U?" H 1300 5875 30  0000 C CNN
+F 1 "BMP280" H 1300 6125 30  0000 C CNN
+F 2 "" H 1300 5975 30  0000 C CNN
+F 3 "" H 1300 5975 30  0000 C CNN
+	1    1300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 5975 1625 5975
+Wire Wire Line
+	1625 5975 1625 5925
+Connection ~ 1625 5925
+$Comp
+L GND #PWR?
+U 1 1 5519B48A
+P 1775 6300
+F 0 "#PWR?" H 1775 6050 60  0001 C CNN
+F 1 "GND" H 1775 6150 60  0000 C CNN
+F 2 "" H 1775 6300 60  0000 C CNN
+F 3 "" H 1775 6300 60  0000 C CNN
+	1    1775 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 6075 1675 6075
+Wire Wire Line
+	1675 6075 1675 6250
+Wire Wire Line
+	1575 6025 1625 6025
+Wire Wire Line
+	1625 6025 1625 6075
+Connection ~ 1625 6075
+Text GLabel 925  5975 0    20   Input ~ 0
+SDA
+Wire Wire Line
+	975  5925 1025 5925
+Wire Wire Line
+	975  5750 975  5925
+Wire Wire Line
+	1675 5750 1675 5925
+Wire Wire Line
+	1025 6075 975  6075
+Wire Wire Line
+	975  6075 975  6250
+Wire Wire Line
+	1025 5975 925  5975
+Wire Wire Line
+	1025 6025 925  6025
+$Comp
+L C C?
+U 1 1 5519C9C3
+P 725 6000
+F 0 "C?" H 775 6100 50  0000 L CNN
+F 1 "100nF" H 500 5900 50  0000 L CNN
+F 2 "" H 763 5850 30  0000 C CNN
+F 3 "" H 725 6000 60  0000 C CNN
+	1    725  6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1675 5925 1575 5925
+Wire Wire Line
+	725  6200 725  6250
+Wire Wire Line
+	725  6250 1775 6250
+Connection ~ 975  6250
+Wire Wire Line
+	725  5800 725  5750
+Wire Wire Line
+	725  5750 1775 5750
+Connection ~ 975  5750
+Connection ~ 1675 5750
+Connection ~ 1675 6250
+$Comp
+L C C?
+U 1 1 5519DD00
+P 1725 6000
+F 0 "C?" H 1775 6100 50  0000 L CNN
+F 1 "100nF" H 1750 5900 50  0000 L CNN
+F 2 "" H 1763 5850 30  0000 C CNN
+F 3 "" H 1725 6000 60  0000 C CNN
+	1    1725 6000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1725 6250 1725 6200
+Wire Wire Line
+	1725 5750 1725 5800
+Connection ~ 1725 5750
+Wire Wire Line
+	1775 6250 1775 6300
+Connection ~ 1725 6250
+Text Notes 1050 5725 0    30   ~ 0
+Barometer sensor
 $EndSCHEMATC
