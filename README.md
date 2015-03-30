@@ -8,12 +8,12 @@ Specification:
 
 The weather station should have the following capabilities:
 
-- [] Temperature measurement
+- [x] Temperature measurement
 - [] Anemometer
 - [] Wind direction measurement
-- [] Humidity measurement
-- [] Barometer 
-- [] Bluetooth Low Energy
+- [x] Humidity measurement
+- [x] Barometer 
+- [x] Bluetooth Low Energy
 - [] Serial communication
 - [x] Battery powered
 
@@ -59,3 +59,24 @@ making it ideal to power the nRF51 devices from a single LiPo cell.
 
 The MCP73831 single cell LiIon/LiPo battery charge management controller was
 chosen for the task of charging the battery from USB(5V) power source.
+
+
+## Temperature Sensor
+
+The TMP112 digital temperature sensor has a temperature operating range from
+-40°C - +125°C. It has an accuracy of 0.5% or 1% depending on the operating
+range and a resolutionof 12 bits. It communicates with the host MCU via I2C.
+
+
+## Humidity Sensor
+
+The Si7013 is a humidity and temperature sensor with an operating range from
+0-100% in relative humidity and -40°C - +125°C. It has an accuracy of +-3%
+relative humidity and +-0.4°C for temperature and communicates with a host MCU
+through I2C. 
+
+## Barometer sensor
+
+The BMP280 is a barometer that has a pressure range from ~300-1100hPa with
+typical accuracy of +-1 hPa. It communicates with a host MCU through either I2C
+or SPI.
