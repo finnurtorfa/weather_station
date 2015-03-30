@@ -580,6 +580,148 @@ Text GLabel 6350 4675 3    20   Input ~ 0
 ANT1
 Text GLabel 6400 4675 3    20   Input ~ 0
 ANT2
+$Comp
+L GND #PWR?
+U 1 1 5518447C
+P 10325 2425
+F 0 "#PWR?" H 10325 2175 60  0001 C CNN
+F 1 "GND" H 10325 2275 60  0000 C CNN
+F 2 "" H 10325 2425 60  0000 C CNN
+F 3 "" H 10325 2425 60  0000 C CNN
+	1    10325 2425
+	1    0    0    -1  
+$EndComp
+Text Notes 9550 1700 0    30   ~ 0
+Impedance matching balun and antenna\nNote: Shunt capacitor/inductor is optional!
+$Comp
+L TMP112 U?
+U 1 1 5518FAD9
+P 1150 4300
+F 0 "U?" H 1100 4175 30  0000 C CNN
+F 1 "TMP112" H 1150 4375 30  0000 C CNN
+F 2 "" H 1150 4300 30  0000 C CNN
+F 3 "" H 1150 4300 30  0000 C CNN
+	1    1150 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 4325 2    20   Input ~ 0
+V3.3
+$Comp
+L GND #PWR?
+U 1 1 551905A6
+P 925 4575
+F 0 "#PWR?" H 925 4325 60  0001 C CNN
+F 1 "GND" H 925 4425 60  0000 C CNN
+F 2 "" H 925 4575 60  0000 C CNN
+F 3 "" H 925 4575 60  0000 C CNN
+	1    925  4575
+	1    0    0    -1  
+$EndComp
+Text GLabel 875  4275 0    20   Input ~ 0
+SCL
+Text GLabel 1600 4275 2    20   Input ~ 0
+SDA
+Text GLabel 675  4375 0    20   Input ~ 0
+ALERT
+$Comp
+L C C?
+U 1 1 551911BC
+P 1300 4525
+F 0 "C?" H 1350 4625 50  0000 L CNN
+F 1 "100nF" H 1350 4425 50  0000 L CNN
+F 2 "" H 1338 4375 30  0000 C CNN
+F 3 "" H 1300 4525 60  0000 C CNN
+	1    1300 4525
+	0    1    1    0   
+$EndComp
+Text GLabel 775  3775 2    20   Input ~ 0
+V3.3
+$Comp
+L R R?
+U 1 1 55191ACC
+P 725 4075
+F 0 "R?" H 625 4075 50  0000 C CNN
+F 1 "4K7" V 732 4076 50  0000 C CNN
+F 2 "" V 655 4075 30  0000 C CNN
+F 3 "" H 725 4075 30  0000 C CNN
+	1    725  4075
+	1    0    0    -1  
+$EndComp
+Text GLabel 9175 3150 0    30   Input ~ 0
+SDA
+Text GLabel 9175 3075 0    30   Input ~ 0
+SCL
+$Comp
+L R R?
+U 1 1 55193BA7
+P 9225 2775
+F 0 "R?" H 9125 2775 50  0000 C CNN
+F 1 "4K7" V 9232 2776 50  0000 C CNN
+F 2 "" V 9155 2775 30  0000 C CNN
+F 3 "" H 9225 2775 30  0000 C CNN
+	1    9225 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 55193E9C
+P 9325 2775
+F 0 "R?" H 9225 2775 50  0000 C CNN
+F 1 "4K7" V 9332 2776 50  0000 C CNN
+F 2 "" V 9255 2775 30  0000 C CNN
+F 3 "" H 9325 2775 30  0000 C CNN
+	1    9325 2775
+	-1   0    0    -1  
+$EndComp
+Text GLabel 9175 2475 0    30   Input ~ 0
+V3.3
+Text Notes 8925 2425 0    30   ~ 0
+TWI Pull up resistors\nNote: nRF51 GPIO pins have internal pull up\nresistance of around 13K so external pull up \nmight not be necessary
+Text GLabel 6700 3125 1    20   Input ~ 0
+SCL
+Text GLabel 6750 3125 1    20   Input ~ 0
+SDA
+$Comp
+L Si7013 U?
+U 1 1 551964B4
+P 1325 5325
+F 0 "U?" H 1325 5175 30  0000 C CNN
+F 1 "Si7013" H 1325 5475 30  0000 C CNN
+F 2 "" H 1325 5325 30  0000 C CNN
+F 3 "" H 1325 5325 30  0000 C CNN
+	1    1325 5325
+	1    0    0    -1  
+$EndComp
+Text GLabel 875  5225 0    20   Input ~ 0
+SDA
+Text GLabel 1775 5225 2    20   Input ~ 0
+SCL
+Text GLabel 1775 5275 2    20   Input ~ 0
+V3.3
+$Comp
+L C C?
+U 1 1 55196C39
+P 725 5125
+F 0 "C?" H 775 5225 50  0000 L CNN
+F 1 "100nF" H 475 5025 50  0000 L CNN
+F 2 "" H 763 4975 30  0000 C CNN
+F 3 "" H 725 5125 60  0000 C CNN
+	1    725  5125
+	-1   0    0    1   
+$EndComp
+Text GLabel 775  4875 2    20   Input ~ 0
+V3.3
+$Comp
+L GND #PWR?
+U 1 1 55197606
+P 725 5425
+F 0 "#PWR?" H 725 5175 60  0001 C CNN
+F 1 "GND" H 725 5275 60  0000 C CNN
+F 2 "" H 725 5425 60  0000 C CNN
+F 3 "" H 725 5425 60  0000 C CNN
+	1    725  5425
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	900  900  900  725 
 Wire Wire Line
@@ -848,17 +990,6 @@ Wire Wire Line
 	6350 4675 6350 4575
 Wire Wire Line
 	6400 4575 6400 4675
-$Comp
-L GND #PWR?
-U 1 1 5518447C
-P 10325 2425
-F 0 "#PWR?" H 10325 2175 60  0001 C CNN
-F 1 "GND" H 10325 2275 60  0000 C CNN
-F 2 "" H 10325 2425 60  0000 C CNN
-F 3 "" H 10325 2425 60  0000 C CNN
-	1    10325 2425
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10275 1875 10650 1875
 Wire Wire Line
@@ -882,118 +1013,36 @@ Wire Wire Line
 	9375 1975 9275 1975
 Wire Wire Line
 	9375 1875 9275 1875
-Text Notes 9550 1700 0    30   ~ 0
-Impedance matching balun and antenna\nNote: Shunt capacitor/inductor is optional!
-$Comp
-L TMP112 U?
-U 1 1 5518FAD9
-P 2100 5650
-F 0 "U?" H 2050 5525 30  0000 C CNN
-F 1 "TMP112" H 2100 5725 30  0000 C CNN
-F 2 "" H 2100 5650 30  0000 C CNN
-F 3 "" H 2100 5650 30  0000 C CNN
-	1    2100 5650
-	1    0    0    -1  
-$EndComp
-Text GLabel 2550 5675 2    20   Input ~ 0
-V3.3
-$Comp
-L GND #PWR?
-U 1 1 551905A6
-P 1875 5925
-F 0 "#PWR?" H 1875 5675 60  0001 C CNN
-F 1 "GND" H 1875 5775 60  0000 C CNN
-F 2 "" H 1875 5925 60  0000 C CNN
-F 3 "" H 1875 5925 60  0000 C CNN
-	1    1875 5925
-	1    0    0    -1  
-$EndComp
-Text GLabel 1825 5625 0    20   Input ~ 0
-SCL
-Text GLabel 2550 5625 2    20   Input ~ 0
-SDA
-Text GLabel 1625 5725 0    20   Input ~ 0
-ALERT
 Wire Wire Line
-	1825 5625 1925 5625
+	875  4275 975  4275
 Wire Wire Line
-	2450 5625 2550 5625
+	1500 4275 1600 4275
 Wire Wire Line
-	2450 5675 2550 5675
+	1500 4325 1600 4325
 Wire Wire Line
-	1925 5675 1875 5675
-$Comp
-L C C?
-U 1 1 551911BC
-P 2250 5875
-F 0 "C?" H 2300 5975 50  0000 L CNN
-F 1 "100nF" H 2300 5775 50  0000 L CNN
-F 2 "" H 2288 5725 30  0000 C CNN
-F 3 "" H 2250 5875 60  0000 C CNN
-	1    2250 5875
-	0    1    1    0   
-$EndComp
+	975  4325 925  4325
 Wire Wire Line
-	2450 5875 2500 5875
+	1500 4525 1550 4525
 Wire Wire Line
-	2500 5875 2500 5675
-Connection ~ 2500 5675
+	1550 4525 1550 4325
+Connection ~ 1550 4325
 Wire Wire Line
-	2050 5875 1875 5875
+	1100 4525 925  4525
 Wire Wire Line
-	1875 5675 1875 5925
-Connection ~ 1875 5875
-Text GLabel 1725 5125 2    20   Input ~ 0
-V3.3
-$Comp
-L R R?
-U 1 1 55191ACC
-P 1675 5425
-F 0 "R?" H 1575 5425 50  0000 C CNN
-F 1 "4K7" V 1682 5426 50  0000 C CNN
-F 2 "" V 1605 5425 30  0000 C CNN
-F 3 "" H 1675 5425 30  0000 C CNN
-	1    1675 5425
-	1    0    0    -1  
-$EndComp
+	925  4325 925  4575
+Connection ~ 925  4525
 Wire Wire Line
-	1725 5125 1675 5125
+	775  3775 725  3775
 Wire Wire Line
-	1675 5125 1675 5175
+	725  3775 725  3825
 Wire Wire Line
-	1675 5675 1675 5725
+	725  4325 725  4375
 Wire Wire Line
-	1625 5725 1925 5725
-Connection ~ 1675 5725
+	675  4375 975  4375
+Connection ~ 725  4375
 Wire Wire Line
-	2450 5725 2500 5725
-Connection ~ 2500 5725
-Text GLabel 9175 3150 0    30   Input ~ 0
-SDA
-Text GLabel 9175 3075 0    30   Input ~ 0
-SCL
-$Comp
-L R R?
-U 1 1 55193BA7
-P 9225 2775
-F 0 "R?" H 9125 2775 50  0000 C CNN
-F 1 "4K7" V 9232 2776 50  0000 C CNN
-F 2 "" V 9155 2775 30  0000 C CNN
-F 3 "" H 9225 2775 30  0000 C CNN
-	1    9225 2775
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 55193E9C
-P 9325 2775
-F 0 "R?" H 9225 2775 50  0000 C CNN
-F 1 "4K7" V 9332 2776 50  0000 C CNN
-F 2 "" V 9255 2775 30  0000 C CNN
-F 3 "" H 9325 2775 30  0000 C CNN
-	1    9325 2775
-	-1   0    0    -1  
-$EndComp
+	1500 4375 1550 4375
+Connection ~ 1550 4375
 Wire Wire Line
 	9325 3025 9325 3150
 Wire Wire Line
@@ -1002,8 +1051,6 @@ Wire Wire Line
 	9225 3025 9225 3075
 Wire Wire Line
 	9225 3075 9175 3075
-Text GLabel 9175 2475 0    30   Input ~ 0
-V3.3
 Wire Wire Line
 	9175 2475 9325 2475
 Wire Wire Line
@@ -1011,14 +1058,47 @@ Wire Wire Line
 Wire Wire Line
 	9325 2475 9325 2525
 Connection ~ 9225 2475
-Text Notes 8925 2425 0    30   ~ 0
-TWI Pull up resistors\nNote: nRF51 GPIO pins have internal pull up\nresistance of around 13K so external pull up \nmight not be necessary
-Text GLabel 6700 3125 1    20   Input ~ 0
-SCL
-Text GLabel 6750 3125 1    20   Input ~ 0
-SDA
 Wire Wire Line
 	6700 3125 6700 3225
 Wire Wire Line
 	6750 3125 6750 3225
+Wire Wire Line
+	975  5425 925  5425
+Wire Wire Line
+	925  5425 925  5525
+Wire Wire Line
+	925  5525 1725 5525
+Wire Wire Line
+	1725 5525 1725 5275
+Wire Wire Line
+	1725 5325 1675 5325
+Wire Wire Line
+	1675 5275 1775 5275
+Connection ~ 1725 5325
+Connection ~ 1725 5275
+Wire Wire Line
+	725  5375 975  5375
+Wire Wire Line
+	925  5375 925  5275
+Wire Wire Line
+	925  5275 975  5275
+Wire Wire Line
+	975  5325 925  5325
+Connection ~ 925  5325
+Wire Wire Line
+	725  5325 725  5425
+Connection ~ 925  5375
+Wire Wire Line
+	775  4875 725  4875
+Wire Wire Line
+	725  4875 725  4925
+Connection ~ 725  5375
+Wire Wire Line
+	975  5225 875  5225
+Wire Wire Line
+	1675 5225 1775 5225
+Text GLabel 6800 3125 1    20   Input ~ 0
+ALERT
+Wire Wire Line
+	6800 3225 6800 3125
 $EndSCHEMATC
