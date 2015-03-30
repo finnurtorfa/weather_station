@@ -1101,4 +1101,6 @@ Text GLabel 6800 3125 1    20   Input ~ 0
 ALERT
 Wire Wire Line
 	6800 3225 6800 3125
+NoConn ~ 1675 5375
+NoConn ~ 1675 5425
 $EndSCHEMATC
