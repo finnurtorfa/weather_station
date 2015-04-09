@@ -1,17 +1,17 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Tue 07 Apr 2015 10:37:48 PM CEST
+Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Thu 09 Apr 2015 03:19:28 PM CEST
 
 BeginCmp
 TimeStamp = /551819AA;
 Reference = B1;
 ValeurCmp = 2450BM14E0003;
-IdModule  = ;
+IdModule  = weather:2450BM14E0003Balun;
 EndCmp
 
 BeginCmp
 TimeStamp = /55261F2B;
 Reference = BT1;
 ValeurCmp = LiPo Battery;
-IdModule  = ;
+IdModule  = weather:JST_2_54;
 EndCmp
 
 BeginCmp
@@ -200,14 +200,14 @@ BeginCmp
 TimeStamp = /55215131;
 Reference = D3;
 ValeurCmp = 1N4007;
-IdModule  = ;
+IdModule  = weather:DO-41;
 EndCmp
 
 BeginCmp
 TimeStamp = /5521A6DF;
 Reference = D4;
 ValeurCmp = 1N4007;
-IdModule  = ;
+IdModule  = weather:DO-41;
 EndCmp
 
 BeginCmp
@@ -221,21 +221,21 @@ BeginCmp
 TimeStamp = /551703C3;
 Reference = J1;
 ValeurCmp = USB_MICRO;
-IdModule  = ;
+IdModule  = weather:USB_MICRO_B;
 EndCmp
 
 BeginCmp
 TimeStamp = /55213074;
 Reference = L1;
 ValeurCmp = 2.2uH;
-IdModule  = ;
+IdModule  = weather:SMD_4040;
 EndCmp
 
 BeginCmp
 TimeStamp = /55168B39;
 Reference = L2;
 ValeurCmp = 2.2uH;
-IdModule  = ;
+IdModule  = weather:SMD_4040;
 EndCmp
 
 BeginCmp
@@ -396,98 +396,98 @@ BeginCmp
 TimeStamp = /552146A1;
 Reference = SP1;
 ValeurCmp = SOUTH;
-IdModule  = ;
+IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
 EndCmp
 
 BeginCmp
 TimeStamp = /55214370;
 Reference = SP2;
 ValeurCmp = NORTH;
-IdModule  = ;
+IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
 EndCmp
 
 BeginCmp
 TimeStamp = /5521A6D3;
 Reference = SP3;
 ValeurCmp = WEST;
-IdModule  = ;
+IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
 EndCmp
 
 BeginCmp
 TimeStamp = /5521A6CD;
 Reference = SP4;
 ValeurCmp = EAST;
-IdModule  = ;
+IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
 EndCmp
 
 BeginCmp
 TimeStamp = /5524274C;
 Reference = SW1;
 ValeurCmp = SWITCH_SPDT;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /5518FAD9;
-Reference = U1;
-ValeurCmp = TMP112;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /5519B048;
-Reference = U2;
-ValeurCmp = BMP280;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /551964B4;
-Reference = U3;
-ValeurCmp = Si7013;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /5521306E;
-Reference = U4;
-ValeurCmp = LM3668;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /5516B7A9;
-Reference = U5;
-ValeurCmp = MCP73831;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /5515D040;
-Reference = U6;
-ValeurCmp = LM3668;
-IdModule  = ;
+IdModule  = weather:T511006_SPDT;
 EndCmp
 
 BeginCmp
 TimeStamp = /551538E5;
-Reference = U7;
+Reference = U1;
 ValeurCmp = nRF51x22;
-IdModule  = ;
+IdModule  = weather:nRF51_QFN48_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = /5518FAD9;
+Reference = U2;
+ValeurCmp = TMP112;
+IdModule  = weather:SOT-563;
+EndCmp
+
+BeginCmp
+TimeStamp = /5519B048;
+Reference = U3;
+ValeurCmp = BMP280;
+IdModule  = weather:LGA_2x2.5x0.95;
+EndCmp
+
+BeginCmp
+TimeStamp = /551964B4;
+Reference = U4;
+ValeurCmp = Si7013;
+IdModule  = weather:DFN10_3x3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5521306E;
+Reference = U5;
+ValeurCmp = LM3668;
+IdModule  = weather:WSON12_0.4P;
+EndCmp
+
+BeginCmp
+TimeStamp = /5516B7A9;
+Reference = U6;
+ValeurCmp = MCP73831;
+IdModule  = weather:SOT-23-5-CUSTOM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5515D040;
+Reference = U7;
+ValeurCmp = LM3668;
+IdModule  = weather:WSON12_0.4P;
 EndCmp
 
 BeginCmp
 TimeStamp = /55174EB7;
 Reference = X1;
 ValeurCmp = 16MHz;
-IdModule  = ;
+IdModule  = weather:CRYSTAL_SMD2520;
 EndCmp
 
 BeginCmp
 TimeStamp = /55181E56;
 Reference = Y1;
 ValeurCmp = 2450AT18A100;
-IdModule  = ;
+IdModule  = weather:2450AT18A100E;
 EndCmp
 
 EndListe
