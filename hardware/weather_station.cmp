@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Thu 09 Apr 2015 03:19:28 PM CEST
+Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Thu 09 Apr 2015 10:28:49 PM CEST
 
 BeginCmp
 TimeStamp = /551819AA;
@@ -81,7 +81,7 @@ BeginCmp
 TimeStamp = /552130A1;
 Reference = C10;
 ValeurCmp = 100nF;
-IdModule  = SMD_Packages:SMD-0402;
+IdModule  = SMD_Packages:SMD-0603;
 EndCmp
 
 BeginCmp
@@ -470,7 +470,7 @@ IdModule  = weather:SOT-23-5-CUSTOM;
 EndCmp
 
 BeginCmp
-TimeStamp = /5515D040;
+TimeStamp = /5526F1CB;
 Reference = U7;
 ValeurCmp = LM3668;
 IdModule  = weather:WSON12_0.4P;
