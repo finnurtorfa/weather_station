@@ -600,7 +600,7 @@ U 1 1 55191ACC
 P 725 5375
 F 0 "R1" H 625 5375 50  0000 C CNN
 F 1 "4K7" V 732 5376 50  0000 C CNN
-F 2 "SMD_Packages:SMD-0603" V 655 5375 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0402" V 655 5375 30  0001 C CNN
 F 3 "" H 725 5375 30  0000 C CNN
 	1    725  5375
 	1    0    0    -1  
@@ -615,7 +615,7 @@ U 1 1 55193BA7
 P 9225 2775
 F 0 "R13" H 9125 2775 50  0000 C CNN
 F 1 "4K7" V 9232 2776 50  0000 C CNN
-F 2 "SMD_Packages:SMD-0603" V 9155 2775 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0402" V 9155 2775 30  0001 C CNN
 F 3 "" H 9225 2775 30  0000 C CNN
 	1    9225 2775
 	1    0    0    -1  
@@ -626,7 +626,7 @@ U 1 1 55193E9C
 P 9325 2775
 F 0 "R14" H 9225 2775 50  0000 C CNN
 F 1 "4K7" V 9332 2776 50  0000 C CNN
-F 2 "SMD_Packages:SMD-0603" V 9255 2775 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0402" V 9255 2775 30  0001 C CNN
 F 3 "" H 9325 2775 30  0000 C CNN
 	1    9325 2775
 	-1   0    0    -1  
@@ -635,9 +635,9 @@ Text GLabel 9175 2475 0    30   Input ~ 0
 V3.3
 Text Notes 8925 2425 0    30   ~ 0
 TWI Pull up resistors\nNote: nRF51 GPIO pins have internal pull up\nresistance of around 13K so external pull up \nmight not be necessary
-Text GLabel 6525 5150 1    20   Input ~ 0
-SCL
 Text GLabel 6575 5150 1    20   Input ~ 0
+SCL
+Text GLabel 6525 5150 1    20   Input ~ 0
 SDA
 $Comp
 L Si7013 U4
@@ -1356,7 +1356,7 @@ Text GLabel 1150 3125 0    30   Input ~ 0
 V50_EN
 Wire Wire Line
 	1550 3125 1150 3125
-Text GLabel 6125 5150 1    20   Input ~ 0
+Text GLabel 6175 5150 1    20   Input ~ 0
 V50_EN
 Wire Wire Line
 	6125 5150 6125 5250
@@ -1686,13 +1686,13 @@ Connection ~ 7775 4500
 Wire Wire Line
 	7900 3400 7900 3450
 Connection ~ 7775 3900
-Text GLabel 6175 5150 1    20   Input ~ 0
+Text GLabel 6125 5150 1    20   Input ~ 0
 PWM1
 Text GLabel 6225 5150 1    20   Input ~ 0
 PWM2
-Text GLabel 6325 5150 1    20   Input ~ 0
-PULSE2
 Text GLabel 6275 5150 1    20   Input ~ 0
+PULSE2
+Text GLabel 7225 6300 2    20   Input ~ 0
 PULSE1
 Wire Wire Line
 	6175 5150 6175 5250
@@ -1700,8 +1700,6 @@ Wire Wire Line
 	6225 5150 6225 5250
 Wire Wire Line
 	6275 5150 6275 5250
-Wire Wire Line
-	6325 5150 6325 5250
 Text Notes 5375 2300 0    30   ~ 0
 Anemometer NORTH-SOUTH ultrasonic sensors
 Text Notes 6850 2300 0    30   ~ 0
@@ -1734,7 +1732,6 @@ NoConn ~ 7125 6100
 NoConn ~ 7125 6150
 NoConn ~ 7125 6200
 NoConn ~ 7125 6250
-NoConn ~ 7125 6300
 NoConn ~ 6825 6600
 NoConn ~ 6775 6600
 NoConn ~ 1275 4225
@@ -1785,4 +1782,7 @@ F 3 "" H 3700 1275 60  0000 C CNN
 	1    3950 1250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7225 6300 7125 6300
+NoConn ~ 6325 5250
 $EndSCHEMATC
