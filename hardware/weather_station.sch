@@ -1109,9 +1109,6 @@ NoConn ~ 6775 5250
 NoConn ~ 6825 5250
 NoConn ~ 7125 5550
 NoConn ~ 7125 5600
-NoConn ~ 7125 5700
-NoConn ~ 7125 5750
-NoConn ~ 7125 5800
 NoConn ~ 7125 5850
 NoConn ~ 7125 5900
 NoConn ~ 7125 5950
@@ -1831,5 +1828,48 @@ Wire Wire Line
 	9225 3550 9325 3550
 Text Notes 8975 3400 0    30   ~ 0
 Programming header
-NoConn ~ 7125 5650
+$Comp
+L CONN_01X04 P2
+U 1 1 552BC4AD
+P 9700 3700
+F 0 "P2" H 9700 3950 50  0000 C CNN
+F 1 "CONN_01X04" V 9800 3700 50  0000 C CNN
+F 2 "weather:4PIN_1.27MMP" H 9700 3700 60  0001 C CNN
+F 3 "" H 9700 3700 60  0000 C CNN
+F 4 "http://www.digikey.dk/product-detail/en/GRPB041VWVN-RC/S9014E-04-ND/1786440" H 9700 3700 60  0001 C CNN "Digi"
+	1    9700 3700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7225 5650 2    20   Input ~ 0
+P0.17
+Text GLabel 7225 5700 2    20   Input ~ 0
+P0.18
+Text GLabel 7225 5750 2    20   Input ~ 0
+P0.19
+Text GLabel 7225 5800 2    20   Input ~ 0
+P0.20
+Text GLabel 10000 3550 2    20   Input ~ 0
+P0.17
+Text GLabel 10000 3650 2    20   Input ~ 0
+P0.18
+Text GLabel 10000 3750 2    20   Input ~ 0
+P0.19
+Text GLabel 10000 3850 2    20   Input ~ 0
+P0.20
+Wire Wire Line
+	7225 5650 7125 5650
+Wire Wire Line
+	7125 5700 7225 5700
+Wire Wire Line
+	7225 5750 7125 5750
+Wire Wire Line
+	7125 5800 7225 5800
+Wire Wire Line
+	10000 3550 9900 3550
+Wire Wire Line
+	9900 3650 10000 3650
+Wire Wire Line
+	10000 3750 9900 3750
+Wire Wire Line
+	9900 3850 10000 3850
 $EndSCHEMATC
