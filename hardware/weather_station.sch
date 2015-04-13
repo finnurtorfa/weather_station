@@ -1100,9 +1100,6 @@ Text Notes 5375 2300 0    30   ~ 0
 Anemometer NORTH-SOUTH ultrasonic sensors
 Text Notes 6850 2300 0    30   ~ 0
 Anemometer EAST-WEST ultrasonic sensors
-NoConn ~ 6375 5250
-NoConn ~ 6425 5250
-NoConn ~ 6475 5250
 NoConn ~ 7125 5850
 NoConn ~ 7125 5900
 NoConn ~ 7125 5950
@@ -1160,7 +1157,6 @@ F 3 "" H 3700 1275 60  0000 C CNN
 	1    3950 1250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6325 5250
 Text GLabel 6825 6700 3    20   Input ~ 0
 SWDCLK
 Text GLabel 6775 6700 3    20   Input ~ 0
@@ -1925,4 +1921,48 @@ Wire Wire Line
 	9325 4325 9225 4325
 Wire Wire Line
 	9225 4225 9325 4225
+$Comp
+L CONN_01X04 P4
+U 1 1 552C9586
+P 10350 3700
+F 0 "P4" H 10350 3950 50  0000 C CNN
+F 1 "CONN_01X04" V 10450 3700 50  0000 C CNN
+F 2 "weather:4PIN_1.27MMP" H 10350 3700 60  0001 C CNN
+F 3 "" H 10350 3700 60  0000 C CNN
+F 4 "http://www.digikey.dk/product-detail/en/GRPB041VWVN-RC/S9014E-04-ND/1786440" H 10350 3700 60  0001 C CNN "Digi"
+	1    10350 3700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6325 5150 1    20   Input ~ 0
+P0.04
+Text GLabel 6375 5150 1    20   Input ~ 0
+P0.05
+Text GLabel 6425 5150 1    20   Input ~ 0
+P0.06
+Text GLabel 6475 5150 1    20   Input ~ 0
+P0.07
+Wire Wire Line
+	6475 5150 6475 5250
+Wire Wire Line
+	6425 5150 6425 5250
+Wire Wire Line
+	6375 5150 6375 5250
+Wire Wire Line
+	6325 5150 6325 5250
+Text GLabel 10650 3550 2    20   Input ~ 0
+P0.04
+Text GLabel 10650 3650 2    20   Input ~ 0
+P0.05
+Text GLabel 10650 3750 2    20   Input ~ 0
+P0.06
+Text GLabel 10650 3850 2    20   Input ~ 0
+P0.07
+Wire Wire Line
+	10650 3850 10550 3850
+Wire Wire Line
+	10550 3750 10650 3750
+Wire Wire Line
+	10650 3650 10550 3650
+Wire Wire Line
+	10550 3550 10650 3550
 $EndSCHEMATC
