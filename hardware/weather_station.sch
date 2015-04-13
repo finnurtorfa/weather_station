@@ -1103,12 +1103,6 @@ Anemometer EAST-WEST ultrasonic sensors
 NoConn ~ 6375 5250
 NoConn ~ 6425 5250
 NoConn ~ 6475 5250
-NoConn ~ 6675 5250
-NoConn ~ 6725 5250
-NoConn ~ 6775 5250
-NoConn ~ 6825 5250
-NoConn ~ 7125 5550
-NoConn ~ 7125 5600
 NoConn ~ 7125 5850
 NoConn ~ 7125 5900
 NoConn ~ 7125 5950
@@ -1872,4 +1866,63 @@ Wire Wire Line
 	10000 3750 9900 3750
 Wire Wire Line
 	9900 3850 10000 3850
+$Comp
+L CONN_01X06 P3
+U 1 1 552C421A
+P 9025 4475
+F 0 "P3" H 9025 4825 50  0000 C CNN
+F 1 "CONN_01X06" V 9125 4475 50  0000 C CNN
+F 2 "weather:6PIN_1.27MMP" H 9025 4475 60  0001 C CNN
+F 3 "" H 9025 4475 60  0000 C CNN
+	1    9025 4475
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6675 5150 1    20   Input ~ 0
+P0.11
+Text GLabel 6725 5150 1    20   Input ~ 0
+P0.12
+Text GLabel 6775 5150 1    20   Input ~ 0
+P0.13
+Text GLabel 6825 5150 1    20   Input ~ 0
+P0.14
+Text GLabel 7225 5550 2    20   Input ~ 0
+P0.15
+Text GLabel 7225 5600 2    20   Input ~ 0
+P0.16
+Wire Wire Line
+	6675 5150 6675 5250
+Wire Wire Line
+	6725 5150 6725 5250
+Wire Wire Line
+	6775 5150 6775 5250
+Wire Wire Line
+	6825 5150 6825 5250
+Wire Wire Line
+	7225 5550 7125 5550
+Wire Wire Line
+	7125 5600 7225 5600
+Text GLabel 9325 4225 2    20   Input ~ 0
+P0.11
+Text GLabel 9325 4325 2    20   Input ~ 0
+P0.12
+Text GLabel 9325 4425 2    20   Input ~ 0
+P0.13
+Text GLabel 9325 4525 2    20   Input ~ 0
+P0.14
+Text GLabel 9325 4625 2    20   Input ~ 0
+P0.15
+Text GLabel 9325 4725 2    20   Input ~ 0
+P0.16
+Wire Wire Line
+	9325 4725 9225 4725
+Wire Wire Line
+	9225 4625 9325 4625
+Wire Wire Line
+	9325 4525 9225 4525
+Wire Wire Line
+	9225 4425 9325 4425
+Wire Wire Line
+	9325 4325 9225 4325
+Wire Wire Line
+	9225 4225 9325 4225
 $EndSCHEMATC
