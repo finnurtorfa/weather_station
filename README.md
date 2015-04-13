@@ -9,12 +9,12 @@ Specification:
 The weather station should have the following capabilities:
 
 - [x] Temperature measurement
-- [] Anemometer
-- [] Wind direction measurement
+- [x] Anemometer
+- [ ] Wind direction measurement
 - [x] Humidity measurement
 - [x] Barometer 
 - [x] Bluetooth Low Energy
-- [] Serial communication
+- [ ] Serial communication
 - [x] Battery powered
 
 ## Microcontroller
