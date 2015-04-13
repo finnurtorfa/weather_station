@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Mon 13 Apr 2015 10:42:52 AM CEST
+Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Mon 13 Apr 2015 11:19:04 AM CEST
 
 BeginCmp
 TimeStamp = /551819AA;
@@ -306,6 +306,13 @@ TimeStamp = /552C9586;
 Reference = P4;
 ValeurCmp = CONN_01X04;
 IdModule  = weather:4PIN_1.27MMP;
+EndCmp
+
+BeginCmp
+TimeStamp = /552CDD2B;
+Reference = P5;
+ValeurCmp = CONN_01X09;
+IdModule  = weather:9PIN_1.27MMP;
 EndCmp
 
 BeginCmp

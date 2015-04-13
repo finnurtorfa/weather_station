@@ -1100,15 +1100,6 @@ Text Notes 5375 2300 0    30   ~ 0
 Anemometer NORTH-SOUTH ultrasonic sensors
 Text Notes 6850 2300 0    30   ~ 0
 Anemometer EAST-WEST ultrasonic sensors
-NoConn ~ 7125 5850
-NoConn ~ 7125 5900
-NoConn ~ 7125 5950
-NoConn ~ 7125 6000
-NoConn ~ 7125 6050
-NoConn ~ 7125 6100
-NoConn ~ 7125 6150
-NoConn ~ 7125 6200
-NoConn ~ 7125 6250
 NoConn ~ 1275 4225
 NoConn ~ 1275 4325
 NoConn ~ 1275 4425
@@ -1965,4 +1956,87 @@ Wire Wire Line
 	10650 3650 10550 3650
 Wire Wire Line
 	10550 3550 10650 3550
+$Comp
+L CONN_01X09 P5
+U 1 1 552CDD2B
+P 9025 5425
+F 0 "P5" H 9025 5925 50  0000 C CNN
+F 1 "CONN_01X09" V 9125 5425 50  0000 C CNN
+F 2 "weather:9PIN_1.27MMP" H 9025 5425 60  0001 C CNN
+F 3 "" H 9025 5425 60  0000 C CNN
+	1    9025 5425
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7225 6250 2    20   Input ~ 0
+P0.29
+Text GLabel 7225 5850 2    20   Input ~ 0
+P0.21
+Text GLabel 7225 5900 2    20   Input ~ 0
+P0.22
+Text GLabel 7225 5950 2    20   Input ~ 0
+P0.23
+Text GLabel 7225 6000 2    20   Input ~ 0
+P0.24
+Text GLabel 7225 6050 2    20   Input ~ 0
+P0.25
+Text GLabel 7225 6100 2    20   Input ~ 0
+P0.26
+Text GLabel 7225 6150 2    20   Input ~ 0
+P0.27
+Text GLabel 7225 6200 2    20   Input ~ 0
+P0.28
+Wire Wire Line
+	7225 6250 7125 6250
+Wire Wire Line
+	7125 6200 7225 6200
+Wire Wire Line
+	7225 6150 7125 6150
+Wire Wire Line
+	7125 6100 7225 6100
+Wire Wire Line
+	7225 6050 7125 6050
+Wire Wire Line
+	7125 6000 7225 6000
+Wire Wire Line
+	7225 5950 7125 5950
+Wire Wire Line
+	7125 5900 7225 5900
+Wire Wire Line
+	7225 5850 7125 5850
+Text GLabel 9325 5825 2    20   Input ~ 0
+P0.29
+Text GLabel 9325 5025 2    20   Input ~ 0
+P0.21
+Text GLabel 9325 5125 2    20   Input ~ 0
+P0.22
+Text GLabel 9325 5225 2    20   Input ~ 0
+P0.23
+Text GLabel 9325 5325 2    20   Input ~ 0
+P0.24
+Text GLabel 9325 5425 2    20   Input ~ 0
+P0.25
+Text GLabel 9325 5525 2    20   Input ~ 0
+P0.26
+Text GLabel 9325 5625 2    20   Input ~ 0
+P0.27
+Text GLabel 9325 5725 2    20   Input ~ 0
+P0.28
+Wire Wire Line
+	9325 5825 9225 5825
+Wire Wire Line
+	9225 5725 9325 5725
+Wire Wire Line
+	9325 5625 9225 5625
+Wire Wire Line
+	9225 5525 9325 5525
+Wire Wire Line
+	9325 5425 9225 5425
+Wire Wire Line
+	9325 5325 9225 5325
+Wire Wire Line
+	9225 5225 9325 5225
+Wire Wire Line
+	9325 5125 9225 5125
+Wire Wire Line
+	9225 5025 9325 5025
 $EndSCHEMATC
