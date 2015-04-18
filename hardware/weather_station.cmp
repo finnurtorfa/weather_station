@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-06 BZR 5484)-product   date = Mon 13 Apr 2015 11:19:04 AM CEST
+Cmp-Mod V01 Created by Cvpcb (2015-04-12 BZR 5595)-product   date = Tue 14 Apr 2015 02:45:35 PM CEST
 
 BeginCmp
 TimeStamp = /551819AA;
@@ -431,28 +431,28 @@ BeginCmp
 TimeStamp = /552146A1;
 Reference = SP1;
 ValeurCmp = SOUTH;
-IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /55214370;
 Reference = SP2;
 ValeurCmp = NORTH;
-IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /5521A6D3;
 Reference = SP3;
 ValeurCmp = WEST;
-IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /5521A6CD;
 Reference = SP4;
 ValeurCmp = EAST;
-IdModule  = weather:ULTRASONIC_MCUST16A40S12RO;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp

@@ -719,12 +719,12 @@ SDA
 $Comp
 L C C2
 U 1 1 5519C9C3
-P 725 7300
-F 0 "C2" H 775 7400 50  0000 L CNN
-F 1 "100nF" H 500 7200 50  0000 L CNN
-F 2 "SMD_Packages:SMD-0603" H 763 7150 30  0001 C CNN
-F 3 "" H 725 7300 60  0000 C CNN
-	1    725  7300
+P 675 7300
+F 0 "C2" H 725 7400 50  0000 L CNN
+F 1 "100nF" H 700 7200 50  0000 L CNN
+F 2 "SMD_Packages:SMD-0603" H 713 7150 30  0001 C CNN
+F 3 "" H 675 7300 60  0000 C CNN
+	1    675  7300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -864,7 +864,7 @@ U 1 1 55214370
 P 6625 2650
 F 0 "SP2" H 6625 2550 31  0000 C CNN
 F 1 "NORTH" V 6775 2650 31  0000 C CNN
-F 2 "weather:ULTRASONIC_MCUST16A40S12RO" H 6625 2650 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6625 2650 60  0001 C CNN
 F 3 "" H 6625 2650 60  0000 C CNN
 	1    6625 2650
 	1    0    0    -1  
@@ -875,7 +875,7 @@ U 1 1 552146A1
 P 6475 4200
 F 0 "SP1" H 6475 4100 31  0000 C CNN
 F 1 "SOUTH" V 6625 4200 31  0000 C CNN
-F 2 "weather:ULTRASONIC_MCUST16A40S12RO" H 6475 4200 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6475 4200 60  0001 C CNN
 F 3 "" H 6475 4200 60  0000 C CNN
 	1    6475 4200
 	1    0    0    1   
@@ -980,7 +980,7 @@ U 1 1 5521A6CD
 P 8100 2650
 F 0 "SP4" H 8100 2550 31  0000 C CNN
 F 1 "EAST" V 8250 2650 31  0000 C CNN
-F 2 "weather:ULTRASONIC_MCUST16A40S12RO" H 8100 2650 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8100 2650 60  0001 C CNN
 F 3 "" H 8100 2650 60  0000 C CNN
 	1    8100 2650
 	1    0    0    -1  
@@ -991,7 +991,7 @@ U 1 1 5521A6D3
 P 7950 4200
 F 0 "SP3" H 7950 4100 31  0000 C CNN
 F 1 "WEST" V 8100 4200 31  0000 C CNN
-F 2 "weather:ULTRASONIC_MCUST16A40S12RO" H 7950 4200 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7950 4200 60  0001 C CNN
 F 3 "" H 7950 4200 60  0000 C CNN
 	1    7950 4200
 	1    0    0    1   
@@ -1181,6 +1181,146 @@ F 3 "" H 9325 3900 60  0000 C CNN
 	1    9325 3900
 	1    0    0    -1  
 $EndComp
+Text Notes 8975 3400 0    30   ~ 0
+Programming header
+$Comp
+L CONN_01X04 P2
+U 1 1 552BC4AD
+P 9700 3700
+F 0 "P2" H 9700 3950 50  0000 C CNN
+F 1 "CONN_01X04" V 9800 3700 50  0000 C CNN
+F 2 "weather:4PIN_1.27MMP" H 9700 3700 60  0001 C CNN
+F 3 "" H 9700 3700 60  0000 C CNN
+F 4 "http://www.digikey.dk/product-detail/en/GRPB041VWVN-RC/S9014E-04-ND/1786440" H 9700 3700 60  0001 C CNN "Digi"
+	1    9700 3700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7225 5650 2    20   Input ~ 0
+P0.17
+Text GLabel 7225 5700 2    20   Input ~ 0
+P0.18
+Text GLabel 7225 5750 2    20   Input ~ 0
+P0.19
+Text GLabel 7225 5800 2    20   Input ~ 0
+P0.20
+Text GLabel 10000 3550 2    20   Input ~ 0
+P0.17
+Text GLabel 10000 3650 2    20   Input ~ 0
+P0.18
+Text GLabel 10000 3750 2    20   Input ~ 0
+P0.19
+Text GLabel 10000 3850 2    20   Input ~ 0
+P0.20
+$Comp
+L CONN_01X06 P3
+U 1 1 552C421A
+P 9025 4475
+F 0 "P3" H 9025 4825 50  0000 C CNN
+F 1 "CONN_01X06" V 9125 4475 50  0000 C CNN
+F 2 "weather:6PIN_1.27MMP" H 9025 4475 60  0001 C CNN
+F 3 "" H 9025 4475 60  0000 C CNN
+	1    9025 4475
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6675 5150 1    20   Input ~ 0
+P0.11
+Text GLabel 6725 5150 1    20   Input ~ 0
+P0.12
+Text GLabel 6775 5150 1    20   Input ~ 0
+P0.13
+Text GLabel 6825 5150 1    20   Input ~ 0
+P0.14
+Text GLabel 7225 5550 2    20   Input ~ 0
+P0.15
+Text GLabel 7225 5600 2    20   Input ~ 0
+P0.16
+Text GLabel 9325 4225 2    20   Input ~ 0
+P0.11
+Text GLabel 9325 4325 2    20   Input ~ 0
+P0.12
+Text GLabel 9325 4425 2    20   Input ~ 0
+P0.13
+Text GLabel 9325 4525 2    20   Input ~ 0
+P0.14
+Text GLabel 9325 4625 2    20   Input ~ 0
+P0.15
+Text GLabel 9325 4725 2    20   Input ~ 0
+P0.16
+$Comp
+L CONN_01X04 P4
+U 1 1 552C9586
+P 10350 3700
+F 0 "P4" H 10350 3950 50  0000 C CNN
+F 1 "CONN_01X04" V 10450 3700 50  0000 C CNN
+F 2 "weather:4PIN_1.27MMP" H 10350 3700 60  0001 C CNN
+F 3 "" H 10350 3700 60  0000 C CNN
+F 4 "http://www.digikey.dk/product-detail/en/GRPB041VWVN-RC/S9014E-04-ND/1786440" H 10350 3700 60  0001 C CNN "Digi"
+	1    10350 3700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6325 5150 1    20   Input ~ 0
+P0.04
+Text GLabel 6375 5150 1    20   Input ~ 0
+P0.05
+Text GLabel 6425 5150 1    20   Input ~ 0
+P0.06
+Text GLabel 6475 5150 1    20   Input ~ 0
+P0.07
+Text GLabel 10650 3550 2    20   Input ~ 0
+P0.04
+Text GLabel 10650 3650 2    20   Input ~ 0
+P0.05
+Text GLabel 10650 3750 2    20   Input ~ 0
+P0.06
+Text GLabel 10650 3850 2    20   Input ~ 0
+P0.07
+$Comp
+L CONN_01X09 P5
+U 1 1 552CDD2B
+P 9025 5425
+F 0 "P5" H 9025 5925 50  0000 C CNN
+F 1 "CONN_01X09" V 9125 5425 50  0000 C CNN
+F 2 "weather:9PIN_1.27MMP" H 9025 5425 60  0001 C CNN
+F 3 "" H 9025 5425 60  0000 C CNN
+	1    9025 5425
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7225 6250 2    20   Input ~ 0
+P0.29
+Text GLabel 7225 5850 2    20   Input ~ 0
+P0.21
+Text GLabel 7225 5900 2    20   Input ~ 0
+P0.22
+Text GLabel 7225 5950 2    20   Input ~ 0
+P0.23
+Text GLabel 7225 6000 2    20   Input ~ 0
+P0.24
+Text GLabel 7225 6050 2    20   Input ~ 0
+P0.25
+Text GLabel 7225 6100 2    20   Input ~ 0
+P0.26
+Text GLabel 7225 6150 2    20   Input ~ 0
+P0.27
+Text GLabel 7225 6200 2    20   Input ~ 0
+P0.28
+Text GLabel 9325 5825 2    20   Input ~ 0
+P0.29
+Text GLabel 9325 5025 2    20   Input ~ 0
+P0.21
+Text GLabel 9325 5125 2    20   Input ~ 0
+P0.22
+Text GLabel 9325 5225 2    20   Input ~ 0
+P0.23
+Text GLabel 9325 5325 2    20   Input ~ 0
+P0.24
+Text GLabel 9325 5425 2    20   Input ~ 0
+P0.25
+Text GLabel 9325 5525 2    20   Input ~ 0
+P0.26
+Text GLabel 9325 5625 2    20   Input ~ 0
+P0.27
+Text GLabel 9325 5725 2    20   Input ~ 0
+P0.28
 Wire Wire Line
 	750  900  750  725 
 Wire Wire Line
@@ -1573,9 +1713,7 @@ Wire Wire Line
 Wire Wire Line
 	1675 7050 1675 7225
 Wire Wire Line
-	1025 7375 975  7375
-Wire Wire Line
-	975  7375 975  7550
+	800  7375 1025 7375
 Wire Wire Line
 	1025 7275 925  7275
 Wire Wire Line
@@ -1583,14 +1721,9 @@ Wire Wire Line
 Wire Wire Line
 	1675 7225 1575 7225
 Wire Wire Line
-	725  7500 725  7550
+	675  7550 1775 7550
 Wire Wire Line
-	725  7550 1775 7550
-Connection ~ 975  7550
-Wire Wire Line
-	725  7100 725  7050
-Wire Wire Line
-	725  7050 1775 7050
+	675  7050 1775 7050
 Connection ~ 975  7050
 Connection ~ 1675 7050
 Connection ~ 1675 7550
@@ -1807,36 +1940,6 @@ Wire Wire Line
 	9225 3650 9325 3650
 Wire Wire Line
 	9225 3550 9325 3550
-Text Notes 8975 3400 0    30   ~ 0
-Programming header
-$Comp
-L CONN_01X04 P2
-U 1 1 552BC4AD
-P 9700 3700
-F 0 "P2" H 9700 3950 50  0000 C CNN
-F 1 "CONN_01X04" V 9800 3700 50  0000 C CNN
-F 2 "weather:4PIN_1.27MMP" H 9700 3700 60  0001 C CNN
-F 3 "" H 9700 3700 60  0000 C CNN
-F 4 "http://www.digikey.dk/product-detail/en/GRPB041VWVN-RC/S9014E-04-ND/1786440" H 9700 3700 60  0001 C CNN "Digi"
-	1    9700 3700
-	-1   0    0    -1  
-$EndComp
-Text GLabel 7225 5650 2    20   Input ~ 0
-P0.17
-Text GLabel 7225 5700 2    20   Input ~ 0
-P0.18
-Text GLabel 7225 5750 2    20   Input ~ 0
-P0.19
-Text GLabel 7225 5800 2    20   Input ~ 0
-P0.20
-Text GLabel 10000 3550 2    20   Input ~ 0
-P0.17
-Text GLabel 10000 3650 2    20   Input ~ 0
-P0.18
-Text GLabel 10000 3750 2    20   Input ~ 0
-P0.19
-Text GLabel 10000 3850 2    20   Input ~ 0
-P0.20
 Wire Wire Line
 	7225 5650 7125 5650
 Wire Wire Line
@@ -1853,29 +1956,6 @@ Wire Wire Line
 	10000 3750 9900 3750
 Wire Wire Line
 	9900 3850 10000 3850
-$Comp
-L CONN_01X06 P3
-U 1 1 552C421A
-P 9025 4475
-F 0 "P3" H 9025 4825 50  0000 C CNN
-F 1 "CONN_01X06" V 9125 4475 50  0000 C CNN
-F 2 "weather:6PIN_1.27MMP" H 9025 4475 60  0001 C CNN
-F 3 "" H 9025 4475 60  0000 C CNN
-	1    9025 4475
-	-1   0    0    -1  
-$EndComp
-Text GLabel 6675 5150 1    20   Input ~ 0
-P0.11
-Text GLabel 6725 5150 1    20   Input ~ 0
-P0.12
-Text GLabel 6775 5150 1    20   Input ~ 0
-P0.13
-Text GLabel 6825 5150 1    20   Input ~ 0
-P0.14
-Text GLabel 7225 5550 2    20   Input ~ 0
-P0.15
-Text GLabel 7225 5600 2    20   Input ~ 0
-P0.16
 Wire Wire Line
 	6675 5150 6675 5250
 Wire Wire Line
@@ -1888,18 +1968,6 @@ Wire Wire Line
 	7225 5550 7125 5550
 Wire Wire Line
 	7125 5600 7225 5600
-Text GLabel 9325 4225 2    20   Input ~ 0
-P0.11
-Text GLabel 9325 4325 2    20   Input ~ 0
-P0.12
-Text GLabel 9325 4425 2    20   Input ~ 0
-P0.13
-Text GLabel 9325 4525 2    20   Input ~ 0
-P0.14
-Text GLabel 9325 4625 2    20   Input ~ 0
-P0.15
-Text GLabel 9325 4725 2    20   Input ~ 0
-P0.16
 Wire Wire Line
 	9325 4725 9225 4725
 Wire Wire Line
@@ -1912,26 +1980,6 @@ Wire Wire Line
 	9325 4325 9225 4325
 Wire Wire Line
 	9225 4225 9325 4225
-$Comp
-L CONN_01X04 P4
-U 1 1 552C9586
-P 10350 3700
-F 0 "P4" H 10350 3950 50  0000 C CNN
-F 1 "CONN_01X04" V 10450 3700 50  0000 C CNN
-F 2 "weather:4PIN_1.27MMP" H 10350 3700 60  0001 C CNN
-F 3 "" H 10350 3700 60  0000 C CNN
-F 4 "http://www.digikey.dk/product-detail/en/GRPB041VWVN-RC/S9014E-04-ND/1786440" H 10350 3700 60  0001 C CNN "Digi"
-	1    10350 3700
-	-1   0    0    -1  
-$EndComp
-Text GLabel 6325 5150 1    20   Input ~ 0
-P0.04
-Text GLabel 6375 5150 1    20   Input ~ 0
-P0.05
-Text GLabel 6425 5150 1    20   Input ~ 0
-P0.06
-Text GLabel 6475 5150 1    20   Input ~ 0
-P0.07
 Wire Wire Line
 	6475 5150 6475 5250
 Wire Wire Line
@@ -1940,14 +1988,6 @@ Wire Wire Line
 	6375 5150 6375 5250
 Wire Wire Line
 	6325 5150 6325 5250
-Text GLabel 10650 3550 2    20   Input ~ 0
-P0.04
-Text GLabel 10650 3650 2    20   Input ~ 0
-P0.05
-Text GLabel 10650 3750 2    20   Input ~ 0
-P0.06
-Text GLabel 10650 3850 2    20   Input ~ 0
-P0.07
 Wire Wire Line
 	10650 3850 10550 3850
 Wire Wire Line
@@ -1956,35 +1996,6 @@ Wire Wire Line
 	10650 3650 10550 3650
 Wire Wire Line
 	10550 3550 10650 3550
-$Comp
-L CONN_01X09 P5
-U 1 1 552CDD2B
-P 9025 5425
-F 0 "P5" H 9025 5925 50  0000 C CNN
-F 1 "CONN_01X09" V 9125 5425 50  0000 C CNN
-F 2 "weather:9PIN_1.27MMP" H 9025 5425 60  0001 C CNN
-F 3 "" H 9025 5425 60  0000 C CNN
-	1    9025 5425
-	-1   0    0    -1  
-$EndComp
-Text GLabel 7225 6250 2    20   Input ~ 0
-P0.29
-Text GLabel 7225 5850 2    20   Input ~ 0
-P0.21
-Text GLabel 7225 5900 2    20   Input ~ 0
-P0.22
-Text GLabel 7225 5950 2    20   Input ~ 0
-P0.23
-Text GLabel 7225 6000 2    20   Input ~ 0
-P0.24
-Text GLabel 7225 6050 2    20   Input ~ 0
-P0.25
-Text GLabel 7225 6100 2    20   Input ~ 0
-P0.26
-Text GLabel 7225 6150 2    20   Input ~ 0
-P0.27
-Text GLabel 7225 6200 2    20   Input ~ 0
-P0.28
 Wire Wire Line
 	7225 6250 7125 6250
 Wire Wire Line
@@ -2003,24 +2014,6 @@ Wire Wire Line
 	7125 5900 7225 5900
 Wire Wire Line
 	7225 5850 7125 5850
-Text GLabel 9325 5825 2    20   Input ~ 0
-P0.29
-Text GLabel 9325 5025 2    20   Input ~ 0
-P0.21
-Text GLabel 9325 5125 2    20   Input ~ 0
-P0.22
-Text GLabel 9325 5225 2    20   Input ~ 0
-P0.23
-Text GLabel 9325 5325 2    20   Input ~ 0
-P0.24
-Text GLabel 9325 5425 2    20   Input ~ 0
-P0.25
-Text GLabel 9325 5525 2    20   Input ~ 0
-P0.26
-Text GLabel 9325 5625 2    20   Input ~ 0
-P0.27
-Text GLabel 9325 5725 2    20   Input ~ 0
-P0.28
 Wire Wire Line
 	9325 5825 9225 5825
 Wire Wire Line
@@ -2039,4 +2032,11 @@ Wire Wire Line
 	9325 5125 9225 5125
 Wire Wire Line
 	9225 5025 9325 5025
+Wire Wire Line
+	800  7375 800  7050
+Connection ~ 800  7050
+Wire Wire Line
+	675  7550 675  7500
+Wire Wire Line
+	675  7050 675  7100
 $EndSCHEMATC
